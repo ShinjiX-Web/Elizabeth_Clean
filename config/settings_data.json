@@ -1,23 +1,5 @@
 {
-  "current": {
-    "logo": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
-    "favicon": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg",
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-        }
-      },
-      "homepage": {
-        "type": "homepage",
-        "settings": {
-        }
-      }
-    },
-    "content_for_index": [
-
-    ]
-  },
+  "current": "Default",
   "presets": {
     "Default": {
     }
