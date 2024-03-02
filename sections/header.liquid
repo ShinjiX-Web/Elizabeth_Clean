@@ -7,6 +7,7 @@
   }
 {% endstyle %}
 
+
 <div x-data="{ mobileMenuOpen: true }" class="relative align-baseline bg-white">
   <div class="px-4 mx-auto sm:px-6 sm:hidden">
     <div class="flex items-center py-6 justify-between md:space-x-10 gap-x-1.5 w-full sm:hidden" style="justify-content: space-between; line-height:0">
@@ -119,7 +120,8 @@
 
         <div class="pt-3">
           <nav class="grid gap-y-7">
-            {% for link in linklists.main-menu.links %}
+            {% assign main_menu_linklist = linklists[section.settings.menu].links %}
+            {% for link in main_menu_linklist %}
               {% assign link_handle = link.handle | replace: '-', '_' %}
               {% if link.links != blank %}
                 <div
@@ -168,6 +170,11 @@
         "id": "title",
         "label": "Text",
         "info": "Enter your title here"
+      }, {
+        "type": "link_list",
+        "id": "main-menu",
+        "label": "Main Menu",
+        "default": "main-menu"
       }
     ]
   }
