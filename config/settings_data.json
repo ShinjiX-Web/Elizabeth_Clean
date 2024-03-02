@@ -5,7 +5,7 @@
         "type": "header",
         "settings": {
           "title": "Hello World",
-          "main-menu": "main-menu"
+          "main-menu": "backup-menu"
         }
       }
     },
