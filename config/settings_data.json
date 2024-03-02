@@ -1,17 +1,5 @@
 {
-  "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "image": "shopify:\/\/shop_images\/Main_b13ad453-477c-4ed1-9b43-81f3345adfd6.jpg"
-        }
-      }
-    },
-    "content_for_index": [
-
-    ]
-  },
+  "current": "Default",
   "presets": {
     "Default": {
     }

@@ -102,7 +102,7 @@
 
         <div class="flex items-center justify-between pb-3" style="justify-content: space-between">
           <div>
-            <h1 class="text-lg text-gray-500">{{ shop.name }}</h1>
+            <h1 class="text-lg text-gray-500">{{ section.settings.title }}</h1>
           </div>
           <div class="-mr-2">
             <button
@@ -158,20 +158,16 @@
     </div>
   </div>
 </div>
-<div>
-  <img src="{{ block.settings.image }}" alt="image">
-</div>
 
 {% schema %}
   {
-    "name": "Menu",
-    "class": "menu-container",
+    "name": "Header",
     "settings": [
       {
-        "type": "image_picker",
-        "id": "image",
+        "type": "text",
+        "id": "title",
         "label": "Text",
-        "info": "Enter your message here"
+        "info": "Enter your title here"
       }
     ]
   }
