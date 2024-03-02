@@ -2,15 +2,17 @@
   @media screen and (min-width: 768px) {
     #three-line > button > svg,
     #mobile-menu-list {
-      display: none;
-    }
+    ;
+    display: none;
   }
+}
 {% endstyle %}
 
+{% assign main_menu_linklist = linklists[section.settings.menu].links %}
 
-<div x-data="{ mobileMenuOpen: true }" class="relative align-baseline bg-white">
-  <div class="px-4 mx-auto sm:px-6 sm:hidden">
-    <div class="flex items-center py-6 justify-between md:space-x-10 gap-x-1.5 w-full sm:hidden" style="justify-content: space-between; line-height:0">
+  <div x-data="{ mobileMenuOpen: true }" class="relative align-baseline bg-white">
+  <div class="px-4 mx-auto sm:px-6">
+    <div class="flex items-center py-6 justify-between md:space-x-10 gap-x-1.5 w-full" style="justify-content: space-between; line-height:0">
 
       <!-- STORE NAME / STORE LOGO -->
 
@@ -120,8 +122,7 @@
 
         <div class="pt-3">
           <nav class="grid gap-y-7">
-            {% assign main_menu_linklist = linklists[section.settings.menu].links %}
-            {% for link in main_menu_linklist %}
+            {% for link in linklists.main-menu.links %}
               {% assign link_handle = link.handle | replace: '-', '_' %}
               {% if link.links != blank %}
                 <div
