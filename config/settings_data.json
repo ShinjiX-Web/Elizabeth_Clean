@@ -1,24 +1,5 @@
 {
-  "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "title": "Custom Project",
-          "main-menu": "main-menu",
-          "button_link": ""
-        }
-      },
-      "feature": {
-        "type": "feature",
-        "settings": {
-        }
-      }
-    },
-    "content_for_index": [
-
-    ]
-  },
+  "current": "Default",
   "presets": {
     "Default": {
     }
