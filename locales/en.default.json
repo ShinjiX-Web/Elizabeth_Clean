@@ -1,5 +1,9 @@
 {
   "general": {
+    "404": {
+      "title": "Page not found",
+      "subtext": "Looks like you've found the doorway to the great nothing."
+    },
     "password_page": {
       "login_form_heading": "Enter store using password:",
       "login_password_button": "Enter using password",
