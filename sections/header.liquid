@@ -6,6 +6,9 @@
     display: none;
   }
 }
+.active-link {
+  color: red;
+}
 {% endstyle %}
 
 <div x-data="{ mobileMenuOpen: true }" class="relative align-baseline">
@@ -58,7 +61,7 @@
                   <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
 
                     {% for childlink in link.links %}
-                      <a href="{{ childlink.url }}" class="flex p-3 -m-3 rounded-lg items start hover:bg-gray-100">
+                      <a href="{{ childlink.url }}" class="flex p-3 -m-3 rounded-lg nav-link items start hover:bg-gray-100">
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">
                             {{ childlink.title }}
@@ -73,13 +76,14 @@
             </div>
           {% else %}
             <div class="relative">
-              <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900 ">
+              <a href="{{ link.url }}" class="text-base text-gray-500 nav-link hover:text-gray-900">
                 {{ link.title }}
               </a>
             </div>
           {% endif %}
         {% endfor %}
       </nav>
+
 
       <div class="items-center justify-end hidden space-x-5 md:flex md:flex-1">
         <a href="{{ routes.cart_url }}" class="w-5 h-5 text-base text-gray-500 whitespace-nowrap hover:text-gray-900">
@@ -171,7 +175,7 @@
       {
         "type": "text",
         "id": "title",
-        "label": "Text",
+        "label": "Mobile Header",
         "info": "Enter your title here"
       }, {
         "type": "link_list",
